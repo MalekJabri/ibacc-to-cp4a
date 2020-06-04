@@ -58,7 +58,7 @@ It's a container that manage the deployement of other product listed above.
           storage: 1Gi
         nfs:
           path: /srv/nfs/icp/ibacc/
-          server: 158.177.226.226
+          server: xxxxxx
         persistentVolumeReclaimPolicy: Retain
         claimRef:
           namespace: odm-icp
@@ -304,7 +304,7 @@ Download the cert-kubernetes project from github: [GitHub - icp4a/cert-kubernete
     
        dc_odm_datasource:
        dc_database_type: "db2"
-       database_servername: "158.177.226.226"
+       database_servername: "xxxxxxx"
        dc_common_database_port: "50000"
        dc_common_database_name: "xxxx"
        dc_common_database_instance_secret: "odm-db-secret"
@@ -439,7 +439,7 @@ odm_configuration:
           #     # Possible values : "db2", "postgresql"
               type: "db2"
           #     # Specify the name of the server running the external database. If it is not specified, the PostgreSQL internal database is used.
-              serverName: "158.177.226.226"
+              serverName: "xxxxxxx"
           #     # Specify the name of the external database.
               databaseName: "odmicp"
           #     # Specify the name of the secret that contains the credentials to connect to the external database.
@@ -478,5 +478,5 @@ odm_configuration:
 
     For example, decision center url : 
 
-        https://159.8.6.116:30763/
+        https://mycluster.icp:30763/
         
